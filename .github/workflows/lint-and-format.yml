@@ -33,8 +33,5 @@ jobs:
       - name: Run Biome format check
         run: npm run format
         
-      - name: Run Biome check (combined)
-        run: npm run check
-        
       - name: Type check
         run: npx tsc --noEmit 
