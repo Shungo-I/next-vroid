@@ -2,17 +2,13 @@ name: Lint and Format Check
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
   pull_request:
-    branches: [main, develop]
+    branches: [main]
 
 jobs:
   lint-and-format:
     runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        node-version: [18, 20]
     
     steps:
       - name: Checkout code
